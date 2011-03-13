@@ -60,7 +60,7 @@
         = @person.diaspora_handle
 
   - if @aspect_ids
-    = render 'shared/publisher', :aspect => @aspect, :aspect_ids => @aspect_ids, :aspects_with_person => @aspects_with_person
+    = render 'shared/publisher', :aspect => @aspect, :aspect_ids => @aspect_ids, :aspects_with_person => @aspects_with_person, :person => @person
   %hr
 
   - if @posts.count > 0
